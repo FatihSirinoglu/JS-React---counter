@@ -1,21 +1,19 @@
-import { useState } from 'react';
+import Counter from './components/Counter';
 import './App.css';
+import PersonalChoices from './components/PersonalChoices';
 
-function App() {
 
-  const [count, setCount] = useState(0)
+function App(props) {
+  
+  
 
   return (
     <div className="App">
-      <div>
-        <h1>Counter</h1>
-        <h2>{count}</h2>
-      </div>
-      <div>
-        <button onClick={()=>setCount(count-1)}>Decrase</button>
-        <button onClick={()=>setCount(0)}>Reset</button>
-        <button onClick={()=>setCount(count+1)}>Increse</button>
-      </div>
+      
+      <Counter />
+
+      <PersonalChoices />
+
       
     </div>
   );
