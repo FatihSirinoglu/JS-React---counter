@@ -1,20 +1,37 @@
 body {
-  margin: 0;
-  padding: 0;
+  margin: 0 55px;
+  padding: 20px;
+  text-align: center;
+  align-items: center;
   
+}
+.header{
+  background-color: rgb(244, 206, 157) ;
+  margin-top: 10px;
+  padding: 5px;
+  font-size: 20px;
 }
 .container{
   background-color: aquamarine;
   color: black;
   margin: auto;
-  padding: 20px;
+  padding: 40px;
+  
 }
 .btn{
-  opacity: 0.6;
+  opacity: 0.7;
+  padding: 10px;
+  border-radius: 10px;
+  margin-left: 2px;
+  
 }
 .btn:hover{
   opacity: 1;
 }
 .reset{
   background-color: rgb(244, 131, 131);
+}
+.input{
+  border-radius: 10px;
+  padding: 8px;
 }
