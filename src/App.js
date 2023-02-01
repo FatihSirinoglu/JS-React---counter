@@ -11,9 +11,10 @@ function App() {
     // this state holds the changing value of count
 
     const handleAutoClick = () => {
-      let intervalId
+      
       if (count < 100) {
-        intervalId = setInterval(() => {
+        let intervalId
+        const newIntervalId = setInterval(() => {
           setCount(prevCount => {
           if (prevCount >= 100) {
             clearInterval(intervalId);
@@ -22,15 +23,17 @@ function App() {
           return Number(prevCount) + Number(autoInput);
         });  
         }, 1000);
+        setIntervalId(newIntervalId)
       }
     };
     const handleStopClick = () => {
       clearInterval(intervalId);
-      return setCount(prevCount=>prevCount);
+      setIntervalId(null);
     };
     const handleResetClick = () => {
       clearInterval(intervalId);
-      setIntervalId(null)
+      setIntervalId(null);
+      setCount(0);
     };
 
     
@@ -49,7 +52,7 @@ function App() {
             <input className='input' onChange={(event) => setInput(event.target.value)} placeholder="Kaçar artsın/azalsın?"></input><br /><br /> 
           </div>
           <div className='auto'>
-            <button className='auto' onClick={handleAutoClick}>Start Auto Count</button><br /><br />
+            <button className='btn' onClick={handleAutoClick}>Start Auto Count</button><br /><br />
             <input className='input' placeholder='Oto Count Value' onChange={(e)=>setAutoInput(e.target.value)}></input> <br /><br />
             <button className='btn' onClick={handleStopClick} >Stop</button> 
             <button className='btn' onClick={handleResetClick}>Reset</button>
