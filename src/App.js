@@ -12,7 +12,7 @@ function App() {
           setCount(prevCount => {
           if (prevCount >= 100) {
             clearInterval(intervalId);
-            return prevCount;
+            return 0;
           }
           return prevCount + 1;
         });  
@@ -31,11 +31,8 @@ function App() {
             <button className='btn' onClick={()=>(setCount(count-(Number(input))))}>Decrease</button>
             <button className='btn reset' onClick={()=>(setCount(0))}>Reset</button>
             <button className='btn' onClick={()=>(setCount(count+(Number(input))))}>Increase</button><br /><br />
-            <input className='input' onChange={(event) => setInput(event.target.value)} placeholder="Kaçar artsın/azalsın?"></input>
-            <h1>{count}</h1>
-            <br />
-            <p>{count}</p>
-            <button onClick={handleClick}>Start Auto Count</button>
+            <input className='input' onChange={(event) => setInput(event.target.value)} placeholder="Kaçar artsın/azalsın?"></input><br /><br />
+            <button className='auto' onClick={handleClick}>Start Auto Count</button>
           </div>
         </div>
     )

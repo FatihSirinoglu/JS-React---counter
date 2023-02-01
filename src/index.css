@@ -3,35 +3,45 @@ body {
   padding: 20px;
   text-align: center;
   align-items: center;
-  
 }
 .header{
-  background-color: rgb(244, 206, 157) ;
+  background-color: rgb(223, 191, 149) ;
   margin-top: 10px;
   padding: 5px;
   font-size: 20px;
 }
+
 .container{
-  background-color: aquamarine;
+  background-color: rgb(123, 195, 171);
   color: black;
   margin: auto;
   padding: 40px;
-  
 }
+
 .btn{
   opacity: 0.7;
   padding: 10px;
   border-radius: 10px;
   margin-left: 2px;
-  
+  cursor: pointer;
 }
+
 .btn:hover{
   opacity: 1;
 }
+
 .reset{
   background-color: rgb(244, 131, 131);
 }
+
 .input{
   border-radius: 10px;
   padding: 8px;
+}
+
+.auto{
+  padding: 10px;
+  font-size: 12px;
+  border-radius: 10px;
+  cursor: pointer;
 }
