@@ -9,6 +9,7 @@ body {
   margin-top: 10px;
   padding: 5px;
   font-size: 20px;
+  border-radius: 30px;
 }
 
 .container{
@@ -16,6 +17,7 @@ body {
   color: black;
   margin: auto;
   padding: 40px;
+  border-radius: 30px;
 }
 
 .btn{
@@ -40,8 +42,9 @@ body {
 }
 
 .auto{
+  background-color: rgb(165, 229, 155) ;
   padding: 10px;
   font-size: 12px;
-  border-radius: 10px;
+  border-radius: 20px;
   cursor: pointer;
 }
